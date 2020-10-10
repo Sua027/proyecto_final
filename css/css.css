@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+body {
+    font-size: 10px;
+    background-color: #F5A6BB;
+}
+
+
+/*---------------------
+# Sección del navegador
+----------------------*/
+
+header {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.bodyGeneral {
+    width: 160em;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 45em;
+    height: 10em;
+    margin-top: 4em;
+    background-image: url(../img/logo_black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.encabezado {
+    width: 110em;
+    height: 10em;
+    margin-top: 4em;
+    /*sin color*/
+}
+
+@media only screen and (max-width: 1600px) {
+    /* Laptop 1600px */
+    body {
+        font-size: 8.5px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    /* Laptop */
+    body {
+        font-size: 7px;
+    }
+}
+
+
+/*-------------------------
+# Sección de los productos
+-------------------------*/
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.producto {
+    width: 35em;
+    height: 70em;
+    margin-top: 10em;
+}
+
+.img {
+    width: 100%;
+    height: 30em;
+    background-color: gray;
+}
+
+.img1 {
+    background-image: url(../img/foto_blackpink.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img2 {
+    background-image: url(../img/BLACKPINK%20-%20How%20You%20Like%20That%20Lyrics%20_%20Kgasa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img3 {
+    background-image: url(../img/the_album.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.img4 {
+    background-image: url(../img/foto_blink.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.titulo {
+    width: 100%;
+    height: 5em;
+    margin-top:3em;
+}
+
+.titulo h1 {
+    font-size: 3em;
+}
+
+.parrafo {
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+}
+
+.parrafo p {
+    font-size: 2em;
+    text-align: justify;
+}
+
+
+/*-------------------------
+# Sección mobil
+-------------------------*/
+
+@media only screen and (max-width:767px) {
+    .bodyGeneral {
+        width: 95%;
+    }
+    .logo {
+        width: 30%;
+        height: 10em;
+        margin-top: 4em;
+    }
+    .encabezado {
+        width: 65%;
+        height: 10em;
+        margin-top: 4em;
+        background-color: #168374;
+    }
+    .bodyContenido {
+        display: block;
+    }
+    .producto {
+        width: 100%;
+    }
+    .img {
+        width: 100%;
+        height: 50em;
+        background-color: gray;
+    }
+}
