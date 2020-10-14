@@ -19,7 +19,6 @@ header {
     height: auto;
     margin: auto;
 }
-
 .bodyGeneral {
     width: 160em;
     height: auto;
@@ -44,6 +43,38 @@ header {
     height: 10em;
     margin-top: 4em;
     /*sin color*/
+}
+ul{
+    display: inline; 
+    float: right;
+}
+li{
+    margin-top: 2.5em;/*margen arriba*/
+    display: inline-block;
+}
+ul#textos li a{
+    position: relative;
+    color: #343436;
+    margin: 1em;
+    padding: 0.5em 0.2em 0.5em;
+    text-decoration: none;
+    font-size: 3em;
+}
+ul#textos li a:after{
+    position: absolute;
+    bottom: 0.1em;
+    left: 0px;
+    width: 100%;
+    height: 0.2em;
+    background-color: #343436;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.2s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(1em);
+}
+ul#textos li a:hover:after{
+    opacity:1;
+    transform: translateY(15px);
 }
 
 @media only screen and (max-width: 1600px) {
@@ -132,26 +163,35 @@ section {
     .bodyGeneral {
         width: 95%;
     }
-    .logo {
-        width: 30%;
-        height: 10em;
-        margin-top: 4em;
-    }
-    .encabezado {
-        width: 65%;
-        height: 10em;
-        margin-top: 4em;
-        background-color: #168374;
-    }
-    .bodyContenido {
-        display: block;
-    }
-    .producto {
-        width: 100%;
-    }
-    .img {
-        width: 100%;
-        height: 50em;
-        background-color: gray;
-    }
+.logo {
+    width: 40%;
+    height: 10em;
+    margin-top: 1em;
+}
+.encabezado {
+    width: 55%;
+    height: 10em;
+    margin-top: 1em;
+    text-align: right;
+    padding-top: 2em;
+    box-sizing: border-box;
+    /*sin color*/
+}
+ul{
+    width: 100%;
+    height: 10em;
+}
+ul#textos li a{
+    font-size: 1.6em;
+}
+.bodyContenido {
+    display: block;
+}
+.producto {
+    width: 100%;
+}
+.img {
+    width: 100%;
+    height: 50em;
+    background-color: gray;
 }
